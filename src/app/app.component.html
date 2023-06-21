@@ -1,0 +1,10 @@
+<div class="main">
+  <div class="main__head">
+    <h2 class="main__head-title">Currency RUB</h2>
+    <button *ngIf="!isAllCurrencys" (click) = "showAllCurrencys()" class="main__button fa-solid fa-circle-plus fa-xl"></button>
+    <button *ngIf="isAllCurrencys" (click) = "showAllCurrencys()" class="main__button fa-solid fa-circle-minus fa-xl"></button>
+  </div>
+  <div class="main__time">{{date.toLocaleDateString() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()}}</div>
+  <p *ngIf="isLoading">Loading...</p>
+  <app-rate *ngFor="let quote of arrQuotes; let i = index " [quoteName]="quote[0]" [quoteValue]="quote[1]" [diffQuote]="arrDiffQuotes[i]"></app-rate>
+</div>

@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="main__name">{{quoteName.replace(rExp, '')}}</div>
+  <div class="main__currency">
+    <span class="main__currency-rate">{{quoteValue.toFixed(2)}}</span>
+    <span class="main__currency-change">
+      <i *ngIf="isIncreased == 1" class="main__currency-arrow fa-solid fa-caret-up"></i>
+      <i *ngIf="isIncreased == -1" class="main__currency-arrow fa-solid fa-caret-down"></i>
+      <span>{{diffQuote}}</span>
+    </span>
+        
+  </div>
+</div>

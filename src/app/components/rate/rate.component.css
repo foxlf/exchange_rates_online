@@ -1,0 +1,21 @@
+.main {
+  display: block;
+}
+.main__name {
+  display: inline-block;
+  width: 40px;
+}
+.main__currency {
+  width: 130px;
+  display: inline-flex;
+  border: 2px solid;
+  margin: 5px;
+  padding: 3px;
+}
+.main__currency-arrow {
+  margin-left: auto;
+  margin-right: 5px;
+}
+.main__currency-change {
+  margin-left: auto;
+}

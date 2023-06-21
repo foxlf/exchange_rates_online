@@ -1,0 +1,18 @@
+.main {
+  padding: 10px;
+}
+.main__head {
+  display:inline-flex;
+}
+.main__head-title {
+  margin: 0px;
+}
+.main__button {
+  margin-left: 15px;
+  border: none; 
+  background-color:white; 
+  cursor:pointer;
+}
+.main__time {
+  margin-bottom: 10px;
+}
